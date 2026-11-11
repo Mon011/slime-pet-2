@@ -1,4 +1,2 @@
-from abc import ABC
-
-class Component(ABC):
+class Component:
     pass

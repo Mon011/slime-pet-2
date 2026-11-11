@@ -7,4 +7,5 @@ class Clickable(Component):
 
     def __init__(self, on_click):
        self.on_click = on_click 
-    
+
+# Component.register(Clickable)

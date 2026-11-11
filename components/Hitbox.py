@@ -7,3 +7,4 @@ class Hitbox(Component):
     def __init__(self, rectangle):
         self.rectangle = rectangle
         
+# Component.register(Hitbox)

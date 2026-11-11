@@ -22,7 +22,7 @@ class IntroductionScene(Scene):
         draw_text("This is your new Slime!", int(SCREEN_WIDTH / 2) - 150, int(SCREEN_HEIGHT / 8), 27, BLACK)
         draw_texture_ex(self.slime_sprite, [int(SCREEN_WIDTH / 2) - self.slime_sprite.width, int(SCREEN_HEIGHT / 2)], 0, 2, WHITE)
         draw_text("Your slime pet's name: " + slime.name, int(SCREEN_WIDTH / 2) - self.slime_sprite.width - 150, int(SCREEN_HEIGHT * 0.80), 36, WHITE)
-        button.standard_button(Rectangle(int(SCREEN_WIDTH * 0.75), int(SCREEN_WIDTH / 2) - self.slime_sprite.width, 150,60), 2, GRAY, BLACK, "NEXT", get_font_default(), navigate_to_park)
+        button.standard_button(int(SCREEN_WIDTH * 0.75), int(SCREEN_WIDTH / 2) - self.slime_sprite.width, 150, 60, 2, GRAY, BLACK, "NEXT", get_font_default(), navigate_to_park)
 
     def unload(self):
         pass

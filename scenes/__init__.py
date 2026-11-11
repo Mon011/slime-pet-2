@@ -7,3 +7,4 @@ from .TownScene import TownScene
 from .MapScene import MapScene
 from .ShopScene import ShopScene
 from .PlaygroundScene import PlaygroundScene
+from .FloopyBirdScene import FloopyBirdScene

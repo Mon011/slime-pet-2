@@ -1,6 +1,7 @@
 from .System import System
 from components import *
 from scenes import *
+from entities import Entity
 
 class UISystem(System):
     _scene: Scene
@@ -22,7 +23,8 @@ class UISystem(System):
             self._scene = ShopScene()
         if(singleton.state == GameState.PLAYGROUND):
             self._scene = PlaygroundScene()
-
+        if(singleton.state == GameState.FLOOPY_BIRD):
+            self._scene = FloopyBirdScene()
             
         self._scene.load()
 

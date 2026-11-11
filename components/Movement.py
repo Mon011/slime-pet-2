@@ -12,3 +12,5 @@ class Movement(Component):
     def __init__(self, speed, direction):
        self.speed = speed 
        self.direction = direction
+
+# Component.register(Movement)

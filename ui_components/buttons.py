@@ -9,7 +9,8 @@ def calculate_font_size(font: Font, text: str, rectangle: Rectangle, spacing: fl
     font_size *= min(scale_x, scale_y)
     return font_size
 
-def standard_button(rectangle: Rectangle, line_thick: int, rect_fill_color: Color, rect_border_color: Color, text: str, font: Font, on_click: callable, text_spacing: float = 0.0):
+def standard_button(x :float, y: float, width: float, height: float, line_thick: int, rect_fill_color: Color, rect_border_color: Color, text: str, font: Font, on_click: callable, text_spacing: float = 0.0):
+    rectangle = Rectangle(x, y, width, height)
     draw_rectangle_rec(rectangle, rect_fill_color)
     draw_rectangle_lines_ex(rectangle, line_thick, rect_border_color)
     font_size = calculate_font_size(font, text, rectangle, text_spacing)

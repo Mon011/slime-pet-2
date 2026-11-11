@@ -1,7 +1,7 @@
 from .System import System
 from components import *
 from scenes import *
-from entities import slime
+from entities import slime, Entity
 import time
 
 class SurvivalSystem(System):

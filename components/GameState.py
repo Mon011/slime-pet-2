@@ -10,3 +10,4 @@ class GameState(Enum):
     MAP = 7
     SHOP = 8
     PLAYGROUND = 9
+    FLOOPY_BIRD = 10

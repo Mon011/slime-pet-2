@@ -12,7 +12,7 @@ class Engine:
         init_window(SCREEN_WIDTH, SCREEN_HEIGHT, res.TITLE)
         set_target_fps(TARGET_FPS)
         ui_system = UISystem()
-        systems = [RenderSystem(), SurvivalSystem()] 
+        systems = [RenderSystem(), SurvivalSystem(), EntityGeneratorSystem()] 
 
         ui_system.load()
 

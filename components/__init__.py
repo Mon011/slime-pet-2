@@ -1,4 +1,5 @@
 from .GameState import GameState
+from .Component import Component
 from .Singleton import Singleton
 from .Singleton import singleton
 from .Position import Position

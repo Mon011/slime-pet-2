@@ -12,3 +12,5 @@ class Render(Component):
         self.source_rectangle = source_rectangle
         self.is_animated = is_animated
         self.rotation = rotation
+
+# Component.register(Render)
