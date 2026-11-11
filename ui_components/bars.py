@@ -1,8 +1,8 @@
 from pyray import *
-from pathlib import Path
 from config import Scale 
+import texture_resources as tex
 
-progress_bar_image = load_image(str(Path("assets/bar/progress_bar.png")))
+progress_bar_image = load_image(tex.PROGRESS_BAR)
 
 def calculate_font_size(font: Font, text: str, rectangle: Rectangle, spacing: float, text_scale: int = 2):
     font_size = rectangle.height
