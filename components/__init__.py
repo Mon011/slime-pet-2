@@ -9,3 +9,5 @@ from .movement import Movement
 from .render import Render
 from .controllable import Controllable
 from .obstacle import Obstacle
+from .gravity import Gravity
+from .collectible import Collectible

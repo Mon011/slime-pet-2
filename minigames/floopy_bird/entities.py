@@ -6,7 +6,7 @@ from entities import Entity, EntityType
 import texture_resources as tex
 
 TUBE_WIDTH = 40 * DEFAULT_TEXTURE_SCALE
-TUBE_SPEED = 3
+TUBE_SPEED = 5
 
 def create_tubes(x: float, gap_y: float, gap_height: float) -> tuple[Entity, Entity]:
     bottom_y = gap_y + gap_height

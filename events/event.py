@@ -39,7 +39,7 @@ class OnCoinDecreaseEvent(Event):
         if slime.coins < self.coin_amount:
             raise CoinAmountException()
         else:
-            slime.coins += self.coin_amount    
+            slime.coins -= self.coin_amount    
 
 
 class OnHungerDecreaseEvent(Event):

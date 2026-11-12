@@ -29,12 +29,18 @@ class CollisionSystem(System):
         if slime_hitbox is None:
             return
 
-        for entity in singleton.state_data.entities:
+        for entity in list(singleton.state_data.entities):
             if entity is slime:
                 continue
 
             hitbox = self._get_hitbox_rectangle(entity)
             if hitbox is None or not check_collision_recs(slime_hitbox, hitbox):
+                continue
+
+            collectible = entity.get_component(Collectible)
+            if collectible is not None:
+                collectible.on_collect()
+                singleton.state_data.entities.remove(entity)
                 continue
 
             obstacle = entity.get_component(Obstacle)

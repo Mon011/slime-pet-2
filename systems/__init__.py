@@ -4,3 +4,5 @@ from .render_system import RenderSystem
 from .survival_system import SurvivalSystem
 from .entity_generator_system import EntityGeneratorSystem
 from .collision_system import CollisionSystem
+from .control_system import ControlSystem
+from .movement_system import MovementSystem

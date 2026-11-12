@@ -29,3 +29,5 @@ SLIME_SPRITE = str(ASSETS / "entities" / "slime" / "static" / "sprite-main.png")
 SLIME_ANIMATION = str(ASSETS / "entities" / "slime" / "animations" / "slime-pet-anim-1.gif")
 
 TUBE = str(ASSETS / "entities" / "tube" / "tube.png")
+
+COIN = str(ASSETS / "entities" / "coin.png")
